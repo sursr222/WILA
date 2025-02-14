@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WILA News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .header img {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 60px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .item {
+            display: flex;
+            margin: 20px 0;
+            width: 80%;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .item img {
+            height: auto;
+        }
+        /* Regular image size */
+        .item:not(.large-image-container) img {
+            width: 150px;
+        }
+        /* Larger image container */
+        .large-image-container {
+            gap: 30px;
+        }
+        /* Larger image size */
+        .large-image-container img {
+            width: 250px;
+        }
+        .text {
+            flex: 1;
+        }
+        .ones-to-watch ul {
+            columns: 2;
+            padding-left: 20px;
+        }
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://media.discordapp.net/attachments/1195818510371278851/1340019618110111866/WILA.png?ex=67b0d605&is=67af8485&hm=947289e320826f0c70a3a28782db43050636a3a0ee6a3993a9864ff740fe1a38&=&format=webp&quality=lossless&width=395&height=395" alt="WILA Logo">
+        <h1>WILA NEWS</h1>
+    </div>
+
+    <div class="content">
+        <!-- Breakinq Poster -->
+        <div class="item">
+            <img src="https://media.discordapp.net/attachments/1323964254327541853/1334282966452670464/imbreakinq123.png?ex=67b06698&is=67af1518&hm=82fb52fbaa79250060a56aa5da6d0b1f4415422795eb0873ca6e046c71560eca&=&format=webp&quality=lossless&width=316&height=395" alt="Breakinq Poster">
+            <div class="text">
+                <h2>Breakinq Poster</h2>
+                <p>Man UTD Player will be one of the key players this season, and will probably be one of the deciding factors on who will win the Premier League.</p>
+            </div>
+        </div>
+
+        <!-- Dias Poster -->
+        <div class="item">
+            <img src="https://media.discordapp.net/attachments/1323964254327541853/1332267390955819070/barcelona_poster.png?ex=67b051b2&is=67af0032&hm=57b50f39fcf4b7a60ad543502eb4ba1be5cc96588d35de2fb4dd50714bbc5044&=&format=webp&quality=lossless&width=316&height=395" alt="Dias Poster">
+            <div class="text">
+                <h2>Dias Poster</h2>
+                <p>The Man himself, a midfielder, or winger, doesn't matter, delivery after delivery, crucial player of both Portugal and Barcelona.</p>
+            </div>
+        </div>
+
+        <!-- Union Berlin Section -->
+        <div class="item">
+            <img src="https://media.discordapp.net/attachments/1269454590458335262/1340030200418930738/32.png?ex=67b0dfe0&is=67af8e60&hm=bba98fe887ce5569b1938cda186dfbe2fb96801e8a37a213d542552815b2a466&=&format=webp&quality=lossless&width=395&height=395" alt="Union Berlin">
+            <div class="text">
+                <h2>Alte Försterei Celebration</h2>
+                <p>At <strong>Alte Försterei</strong>, euphoria filled the air—Union Berlin was leading confidently, and the fans were already celebrating victory.</p>
+            </div>
+        </div>
+
+        <!-- Farat Section -->
+        <div class="item">
+            <img src="https://media.discordapp.net/attachments/1269454590458335262/1340030234703040513/20.png?ex=67b0dfe8&is=67af8e68&hm=cac73841b0ecfec923dc6963f1e95a0ddf00b23799581bb4b451eacbcea64a21&=&format=webp&quality=lossless&width=395&height=395" alt="Farat">
+            <div class="text">
+                <h3>The Farat</h3>
+                <p>Top scorer of DFB POKAL, has incredible stats and scored 4 goals in two matches</p>
+            </div>
+        </div>
+
+        <!-- Ones to Watch (Larger Image) -->
+        <div class="item large-image-container">
+            <img src="https://media.discordapp.net/attachments/1323964254327541853/1330914313157873766/Onestowatch_WILA_done.png?ex=67b0ab8b&is=67af5a0b&hm=1a6d706ae887db9b146ca8168ec3fae66f8011198f8200feeb3624a6aea8737a&=&format=webp&quality=lossless&width=632&height=395" alt="Ones to Watch">
+            <div class="text ones-to-watch">
+                <h2>ONES TO WATCH</h2>
+                <ul>
+                    <li>Breakinq - Manchester United</li>
+                    <li>Onirow - Monchengladbach</li>
+                    <li>jayzqc - OGC Nice</li>
+                    <li>dias - FC Barcelona</li>
+                    <li>Taiga - Tottenham</li>
+                    <li>Pusmiko - Manchester United</li>
+                    <li>Król_Foczuś - Villarreal</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
