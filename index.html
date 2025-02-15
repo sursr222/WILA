@@ -42,6 +42,7 @@
             padding: 5px 10px;
             border-radius: 4px;
             background: white;
+            z-index: 1;
         }
         [dir="rtl"] .header img {
             left: auto;
@@ -132,7 +133,7 @@
 
         <!-- Ones to Watch -->
         <div class="news-item">
-            <img src="https://media.discordapp.net/attachments/1323964254327541853/1330914313157873766/Onestowatch_WILA_done.png" class="large-image" alt="Ones to Watch">
+            <img src="https://media.discordapp.net/attachments/1323964254327541853/1330914313157873766/Onestowatch_WILA_done.png" alt="Ones to Watch">
             <div class="text-content">
                 <h2 data-translate="watchTitle">ONES TO WATCH</h2>
                 <ul class="watch-list" id="watchList"></ul>
@@ -245,28 +246,21 @@ const translations = {
 };
 
 function updateContent(lang = 'en') {
-    // Update text direction
     document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
     
-    // Update all translatable elements
     document.querySelectorAll('[data-translate]').forEach(el => {
         const key = el.dataset.translate;
         el.textContent = translations[lang][key];
     });
 
-    // Update watch list
-    const watchList = translations[lang].watchList
-        .map(item => `<li>${item}</li>`)
-        .join('');
-    document.getElementById('watchList').innerHTML = watchList;
+    document.getElementById('watchList').innerHTML = 
+        translations[lang].watchList.map(item => `<li>${item}</li>`).join('');
 }
 
-// Event listeners
 document.getElementById('langSelector').addEventListener('change', (e) => {
     updateContent(e.target.value);
 });
 
-// Initial load
 updateContent('en');
 </script>
 </body>
